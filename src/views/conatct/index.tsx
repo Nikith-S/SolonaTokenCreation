@@ -89,7 +89,8 @@ export const ContactView: FC = ({setOpenContact}) => {
                     </div>
                     <a
                       onClick={CloseModal}
-                      className="group mt-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-white/20 backdrop-blur-2xl transition-all duration-500 hover:bg-blue-500/60"
+                      className="group mt-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-white/20 backdrop-blur-2xl transition-all duration- 
+                       500 hover:bg-blue-500/60"
                     >
                       <i className="text-2xl text-white group-hover:text-white">
                         <AiOutlineClose />
