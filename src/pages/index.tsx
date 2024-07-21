@@ -82,7 +82,7 @@ const Home: NextPage = (props) => {
            </div>
 
       )}
-        {/* {openAirdrop && (
+        {openAirdrop && (
         <div className="new_loader relative
         h-full bg-slate-900">
           <AirdropView setOpenAirdrop=
@@ -91,7 +91,7 @@ const Home: NextPage = (props) => {
 
       )}
 
-        {openSendTransaction && (
+        {/* {openSendTransaction && (
         <div className="new_loader relative
         h-full bg-slate-900">
           <DonateView setOpenSendTransaction=
