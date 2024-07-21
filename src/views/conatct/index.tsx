@@ -31,11 +31,7 @@ export const ContactView: FC = ({setOpenContact}) => {
 
 
     <>
-    {isLoading && (
-      <div className="absolute top-0 left-0 z-50 flex h-screen w-full items-center justify-center bg-black/[.3] backdrop-blur-[10px]">
-        <ClipLoader />
-      </div>
-    )}
+  
 
     <section className="flex w-full items-center py-6 px-0 lg:h-screen lg:p-10">
       <div className="container">
@@ -77,15 +73,18 @@ export const ContactView: FC = ({setOpenContact}) => {
                       <textarea name="message" id="message" rows="6"   className='border-default-200 relative block w-full rounded
                         border-white/10 bg -transparent py-1.5 px-3 text-white/80 focus:border-white/25 focus:ring-transparent'
                         placeholder='message'></textarea>
-                        
+                           <ValidationError prefix='Message' field='message' errors={state.errors} />
+
                     </form>
                  
                     <div className="mb-6 text-center">
                       <button
-                        onClick={() => getMetadata(tokenAddress)}
-                        className="bg-primary-600/900 hover:bg-primary-600 group mt-5 inline-flex w-full items-center justify-center rounded-lg px-6 py-2 text-white backdrop-blur-2xl transition-all duration-500"
+                       type='submit'
+                       disabled={state.submitting}
+                        className="bg-primary-600/900 hover:bg-primary-600 group mt-5 inline-flex w-full items-center justify-center rounded-lg px-6 py-2 text-   
+                         white backdrop-blur-2xl transition-all duration-500"
                       >
-                        <span className="fw-bold">Get Token Metadata</span>
+                        <span className="fw-bold"> Send Message </span>
                       </button>
                     </div>
                     <a
