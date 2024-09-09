@@ -11,7 +11,7 @@ export const OfferView: FC = () => {
             </h2>
             <p className='text-default-200 text-sm font-medium'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere natus aspernatur alias provident pariatur sint ducimus laudantium, <br />
-              velit repellat esse.
+              velit repellat esse
             </p>
           </div>
         </div>
